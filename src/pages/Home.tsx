@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Home: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Hero Section */}
@@ -12,7 +15,10 @@ const Home: React.FC = () => {
           Discover amazing restaurants near you and share your dining
           experiences.
         </p>
-        <button className="bg-white text-blue-500 px-6 py-3 rounded-full shadow-md hover:bg-blue-100">
+        <button
+          className="bg-white text-blue-500 px-6 py-3 rounded-full shadow-md hover:bg-blue-100"
+          onClick={() => navigate("/discover")}
+        >
           Get Started
         </button>
       </section>
