@@ -9,9 +9,9 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="bg-white shadow-md fixed top-0 left-0 w-full flex items-center justify-between px-6 py-3 z-10">
-      <h1 className="text-primary text-2xl font-bold" onClick={() => navigate("/FoodieFinds-DiscoverRestaurants")}>Foodie Finds</h1>
+      <h1 className="text-primary text-2xl font-bold" onClick={() => navigate("/")}>Foodie Finds</h1>
       <div className="flex space-x-4">
-        <NavLink to="/FoodieFinds-DiscoverRestaurants" className={({ isActive }: { isActive: boolean }) => (isActive ? activeClass : defaultClass)}>Home</NavLink>
+        <NavLink to="/" className={({ isActive }: { isActive: boolean }) => (isActive ? activeClass : defaultClass)}>Home</NavLink>
         <NavLink to="/discover" className={({ isActive }: { isActive: boolean }) => (isActive ? activeClass : defaultClass)}>Discover</NavLink>
         <NavLink to="/profile" className={({ isActive }: { isActive: boolean }) => (isActive ? activeClass : defaultClass)}>Profile</NavLink>
       </div>

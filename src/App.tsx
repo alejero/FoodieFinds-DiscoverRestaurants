@@ -8,11 +8,11 @@ import "./index.css";
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/FoodieFinds-DiscoverRestaurants">
       <Navbar />
       <main className="w-full mx-auto p-4 sm:p-6 lg:p-8">
         <Routes>
-          <Route path="/FoodieFinds-DiscoverRestaurants" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/discover" element={<Discover />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
